@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>12 Estilização  de formularáios</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			background: url('./images/fundo.jpg')no-repeat center/cover fixed;
+			height: 100%;
+			width: 100%;
+			font-size: 18px;
+			font-family: 'Raleway', sans-serif;
+			line-height: 1.3;
+			
+		}
+
+		.overlay{
+			background: rgba(54, 52, 105, 0.5);
+			width: 100%;
+			height: 100%;
+		}
+
+		.container{
+			width: 700px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		header h1, header p{
+			text-align: center;
+			color: white;
+		}
+
+		header p{
+			font-style: italic;
+			margin-bottom: 20px;
+		}
+
+		.formulario{
+			background: rgba(27, 27, 50, 0.8);
+			color: white;
+			padding: 45px;
+			border-radius: 5px;r
+		}
+
+		.formulario .form-group{
+			margin: 25px 0 ;
+		}
+
+		.formulario .form-group label{
+			display: block;
+			margin: 15px 0;
+		}
+
+		.formulario .form-group input, .formulario .form-group select, .formulario .form-group textarea, button{
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+		}
+
+		.formulario .form-group input[type="radio"], .formulario .form-group input[type="checkbox"]{
+			width: 20px;
+		}
+
+		.formulario button{
+			color: white;
+			border: none;
+			background: #199C6C;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="overlay">
+	<div class="container">
+		<header>
+			<h1>Formulário da Mechanical Tecnologia</h1>
+			<p>Preencha dividamente o formulario e habilite-se a ganhar uma bolsa de estudo com garantia de estágio</p>
+		</header>
+
+		<div class="formulario">
+			<form action="">
+				<div class="form-group">
+					<label for="name">Nome</label>
+					<input type="text" name="nome" id="nome">
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+				</div>
+				<div class="form-group">
+					<label for="idade">Idade</label>
+					<input type="text" name="" id="idade">
+				</div>
+
+				<div class="form-group">
+					<p>Qual das ocupações tens no momento?</p>
+					<select name="ocupacao" id="">
+						<option value="" disabled="" selected=""> selecione uma opção </option>
+						<option value="estudante">Estudante</option>
+						<option value="trab_temp_int">Trabalha a tempo inteiro</option>
+						<option value="trab_e_estuda">Trabalha e estuda</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<p>Recomendaria a Mechanical Tecnologia a amigos ou conhecidos?</p>
+
+					<label><input type="radio" name="opcao" value="certamente">Certamente</label>
+					<label ><input type="radio" name="opcao" value="mais_ou_menos">Mais ou menos</label>
+					<label ><input type="radio" name="opcao" value="Nao">Nao</label>
+				</div>
+
+				<div class="form-group">
+					<p>Porque escolheria a  Mechanical?</p>
+					<select name="ocupacao" id="">
+						<option value="" disabled="" selected=""> selecione uma opcao</option>
+						<option value="prof_alt_qual">Professores altamente qualificados</option>
+						<option value="cur_com_garant">Cursos com oportunidade de emprego</option>
+						<option value="qual_de_form">Qualidade de formação </option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<p>Escolha os cursos que te despertam atenção</p>
+
+					<label><input type="checkbox" name="curso" value="desenvolvimento">Desenvolvimento de sistemas</label>
+					<label ><input type="checkbox" name="curso" value="analise">Analise de sistemas</label>
+					<label ><input type="checkbox" name="curso" value="gestao">Gestão  de projectos</label>
+					<label ><input type="checkbox" name="curso" value="ciencia">Ciencia de dados</label>
+					<label ><input type="checkbox" name="curso" value="design">Design gráfico</label>
+					<label ><input type="checkbox" name="curso" value="excel">Excel avançado</label>
+					<label ><input type="checkbox" name="curso" value="informatica">Informática básica</label>
+					<label ><input type="checkbox" name="curso" value="wordpres">webcom wordpress</label>
+					<label ><input type="checkbox" name="curso" value="tamplates">Desenvolvimento de tamplates</label>
+					<label ><input type="checkbox" name="curso" value="marcacao">html e css3</label>
+				</div>
+
+				<div class="form-group">
+					<textarea name="menssagem" id="" cols="30" rows="10">Deixe sua menssagem</textarea>
+				</div>
+
+				<button>Submeter</button>
+
+			</form>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
